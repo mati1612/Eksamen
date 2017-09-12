@@ -6,36 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FancyClothes.DK</title>
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="skeleton.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Karla|Lato|Oswald" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/0dd4dd1c13.js"></script>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
 <!-- Top søgebar og sprog, hardcoded -->
     <div class="container">
-        <div class="row">
-            <div class="six columns"></div>
-            <div class="six columns"></div>
-            <div class="twelve columns"></div>
+        <div class="row" id="top">
+        <div id="icon" class="col-2 row">
+            <img src="img/ikon.png" alt="Dansk flag"><p>Dansk</p><p>DKK</p>
+        </div>
+        <div id="search" class="col-3 row">
+            <input type="text"><button type="button" class="btn btn-secondary">Søg</button>
+        </div>
+        </div>
+        <div class="col" id="homeicon">
+            <a href="#"><img src="img/homeicon.png" alt="Logo trøje"></a>
         </div>
     </div>
     <hr>
 
 <!-- Navigation og indkøbskurv -->
     <div class="container">
-        <div class="row">
-        <nav>
-            <ul class="row">
-                <li><a href="#">Foside</a></li>
-                <li><a href="#">Produkter</a></li>
-                <li><a href="#">Nyheder</a></li>
-                <li><a href="#">Handelsbetingelser</a></li>
-                <li><a href="#">Om os</a></li>
-                <li><a href="#">Log Ind</a></li>
-            </ul>
+        <div class="row" id="navi">
+        <nav class="nav">
+            <li class="nav-item active"><a href="#" class="nav-link">Forside</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Produkter</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Nyheder</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Handelsbetingelser</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Om os</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Log ind</a></li>
         </nav>
         <div id="kurv">
+            <p>Din indkøbskurv er tom</p><i class="fa fa-shopping-cart" aria-hidden="true"></i>
         </div>
         </div>
     </div>
@@ -43,11 +52,38 @@
 
 <!-- Slideshow -->
     <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/slide1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/slide2.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/slide3.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+    </div>
     </div>
     <hr>
 
 <!-- Tagline/header -->
     <header class="container">
+    <h1>FancyClothes.DK - tøj, kvalitet, simpelt!</h1>
     </header>
     <hr>
 
@@ -56,6 +92,7 @@
 
 <!-- Aside bar -->
     <aside>
+
     </aside>
 
 <!-- Main artikel område -->
@@ -69,6 +106,18 @@
 
 <!-- Footer -->
     <footer class="container">
+        <div class="row" id="footerinfo">
+            <p>FancyClothes.dk</p>
+            <p>Skrælderstrien 7</p>
+            <p>4321 Fredensvang</p>
+            <p>E-mail: info@fancy@gmail.com</p>
+            <p>Hosted by: Matias Schjøtt</p>
+        </div>
+        <div class="row" id="socialmedia">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+        </div>
     </footer>
 </body>
 </html>
