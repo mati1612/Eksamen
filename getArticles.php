@@ -9,7 +9,7 @@ $statement->execute();
 while ($row = $statement->fetch()){
 ?>
     <article class="col-3">
-            <img src="img/<?php echo $row['imgPath']; ?>" alt="<?php echo $row['imgAlt']; ?>">
+            <a href="#"><img src="img/<?php echo $row['imgPath']; ?>" alt="<?php echo $row['imgAlt']; ?>"></a>
             <p><?php echo $row['header']; ?></p>
             <div>
                 <p>

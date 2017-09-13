@@ -123,8 +123,14 @@ aside div button {
   margin-bottom: 10%;
 }
 
+main div form #content {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
 main #opaimg {
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 main #opaimg h4 {
@@ -134,9 +140,12 @@ main #opaimg h4 {
 
 main #opaimg #herre {
   background-image: url("img/kategoriHerre.jpg");
+  background-repeat: no-repeat;
   height: 300px;
   opacity: 0.6;
   background-size: 100%;
+  border-right: 7px solid transparent;
+  margin-bottom: 10px;
 }
 
 main #opaimg #herre:hover {
@@ -146,14 +155,37 @@ main #opaimg #herre:hover {
 
 main #opaimg #dame {
   background-image: url("img/kategoriKvinde.jpg");
+  background-repeat: no-repeat;
   height: 300px;
   opacity: 0.6;
   background-size: 100%;
+  border-left: 7px solid transparent;
 }
 
 main #opaimg #dame:hover {
   opacity: 1;
   transition: 1s;
+}
+
+main article {
+  padding: 0 !important;
+  border: 7px solid transparent;
+}
+
+main article img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+main article p {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+main article div {
+  background-color: #eeeeee;
+  padding: 10px;
 }
 
 #footerinfo {

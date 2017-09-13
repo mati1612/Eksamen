@@ -128,8 +128,16 @@
 
 // Main
     main{
+        div{
+            form #content{
+                height: 200px;
+                margin-bottom: 20px;
+            }
+        }
+
         #opaimg{
             justify-content: space-between;
+            box-sizing: border-box;
             h4{
                 text-align: center;
                 font-family: 'Karla', sans-serif;
@@ -137,9 +145,12 @@
 
             #herre{
                 background-image: url("img/kategoriHerre.jpg");
+                background-repeat: no-repeat;
                 height: 300px;
                 opacity: 0.6;
                 background-size: 100%;
+                border-right: 7px solid transparent;
+                margin-bottom: 10px;
 
                 &:hover{
                     opacity: 1;
@@ -149,14 +160,38 @@
             }
             #dame{
                 background-image: url("img/kategoriKvinde.jpg");
+                background-repeat: no-repeat;
                 height: 300px;
                 opacity: 0.6;
                 background-size: 100%;
+                border-left: 7px solid transparent;
 
                 &:hover{
                     opacity: 1;
                     transition: 1s;
                 }
+            }
+        }
+
+        article{
+
+            padding: 0 !important;
+            border: 7px solid transparent;
+
+            img{
+                width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+            }
+
+            p{
+                font-family: 'Lato', sans-serif;
+                text-align: center;
+            }
+
+            div{
+                background-color: $asidelightgrey;
+                padding: 10px;
             }
         }
     }
