@@ -80,4 +80,96 @@
         h1{
             font-family: 'Oswald', sans-serif;
           } 
-    } 
+    }
+// Aside
+    aside div{
+        font-family: 'Karla', sans-serif;
+        background-color: $asidelightgrey;
+        width: 100%;
+        padding: 0 !important;
+        h5{
+            background-color: $asidedarkgrey;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        ul{
+            list-style: none;
+            padding: 0;
+
+            li{
+                margin-bottom: 10px;
+            }
+
+            a{
+                text-decoration: none;
+                text-align: left;
+                color: black;
+                margin-left: 10px;
+
+                &:hover{
+                    color: lighten(black, 30%);
+                    text-decoration: none;
+                }
+            }
+        }
+
+        input{
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        button{
+            margin-left: 30%;
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+    }
+
+// Main
+    main{
+        #opaimg{
+            justify-content: space-between;
+            h4{
+                text-align: center;
+                font-family: 'Karla', sans-serif;
+            }
+
+            #herre{
+                background-image: url("img/kategoriHerre.jpg");
+                height: 300px;
+                opacity: 0.6;
+                background-size: 100%;
+
+                &:hover{
+                    opacity: 1;
+                    transition: 1s;
+                }
+   
+            }
+            #dame{
+                background-image: url("img/kategoriKvinde.jpg");
+                height: 300px;
+                opacity: 0.6;
+                background-size: 100%;
+
+                &:hover{
+                    opacity: 1;
+                    transition: 1s;
+                }
+            }
+        }
+    }
+
+// Footer
+    #footerinfo{
+        justify-content: space-between;
+        font-family: 'Karla', sans-serif;
+    }
+    #socialmedia{
+        justify-content: center;
+        i{
+            margin: 10px;
+            font-size: 200%;
+        }
+    }

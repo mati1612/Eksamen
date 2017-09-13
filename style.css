@@ -77,3 +77,95 @@ header {
 header h1 {
   font-family: 'Oswald', sans-serif;
 }
+
+aside div {
+  font-family: 'Karla', sans-serif;
+  background-color: #eeeeee;
+  width: 100%;
+  padding: 0 !important;
+}
+
+aside div h5 {
+  background-color: #d5d5d5;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+aside div ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside div ul li {
+  margin-bottom: 10px;
+}
+
+aside div ul a {
+  text-decoration: none;
+  text-align: left;
+  color: black;
+  margin-left: 10px;
+}
+
+aside div ul a:hover {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+aside div input {
+  width: 90%;
+  margin-left: 5%;
+}
+
+aside div button {
+  margin-left: 30%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+main #opaimg {
+  justify-content: space-between;
+}
+
+main #opaimg h4 {
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+}
+
+main #opaimg #herre {
+  background-image: url("img/kategoriHerre.jpg");
+  height: 300px;
+  opacity: 0.6;
+  background-size: 100%;
+}
+
+main #opaimg #herre:hover {
+  opacity: 1;
+  transition: 1s;
+}
+
+main #opaimg #dame {
+  background-image: url("img/kategoriKvinde.jpg");
+  height: 300px;
+  opacity: 0.6;
+  background-size: 100%;
+}
+
+main #opaimg #dame:hover {
+  opacity: 1;
+  transition: 1s;
+}
+
+#footerinfo {
+  justify-content: space-between;
+  font-family: 'Karla', sans-serif;
+}
+
+#socialmedia {
+  justify-content: center;
+}
+
+#socialmedia i {
+  margin: 10px;
+  font-size: 200%;
+}
