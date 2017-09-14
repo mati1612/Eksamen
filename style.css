@@ -54,6 +54,7 @@ nav a:active {
 
 #kurv {
   background-color: #343434;
+  margin-right: 15px;
   display: flex;
 }
 
@@ -128,14 +129,12 @@ main div form #content {
   margin-bottom: 20px;
 }
 
-main #opaimg {
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-
 main #opaimg h4 {
   text-align: center;
   font-family: 'Karla', sans-serif;
+  padding: 20px;
+  border-bottom: 2px solid #cccccc;
+  margin-bottom: 20px;
 }
 
 main #opaimg #herre {
@@ -146,6 +145,15 @@ main #opaimg #herre {
   background-size: 100%;
   border-right: 7px solid transparent;
   margin-bottom: 10px;
+  transition: 1s;
+}
+
+main #opaimg #herre h5 {
+  margin-top: 20px;
+}
+
+main #opaimg #herre button {
+  margin-top: 10px;
 }
 
 main #opaimg #herre:hover {
@@ -160,6 +168,15 @@ main #opaimg #dame {
   opacity: 0.6;
   background-size: 100%;
   border-left: 7px solid transparent;
+  transition: 1s;
+}
+
+main #opaimg #dame h5 {
+  margin-top: 20px;
+}
+
+main #opaimg #dame button {
+  margin-top: 10px;
 }
 
 main #opaimg #dame:hover {

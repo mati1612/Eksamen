@@ -21,14 +21,13 @@
             <input type="text" id="content" name="content" placeholder="Skriv din artikel her..." class="col-12">
 
             <input type="submit" value="Indsæt" content="Indsæt">
-        </form>;
+        </form>
            <?php }
         ?>
         </div>
 
         <div class="row" id="opaimg">
             <h4 class="col-12">INSPIRATION</h4>
-            <hr class="col-12">
             <div class="col-6" id="herre">
                 <h5>Herretøj</h5>
                 <button type="button" class="btn btn-outline-dark">Læs mere</button>

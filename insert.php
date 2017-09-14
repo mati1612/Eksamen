@@ -1,12 +1,12 @@
 <?php 
+session_start();
 //variabler fra form
-$header = $_GET['header'];
-$imgPath = $_GET['imgPath'];
-$imgAlt = $_GET['imgAlt'];
-$content = $_GET['content'];
+$header = $_POST['header'];
+$imgPath = $_FILES['imgPath'];
+$imgAlt = $_POST['imgAlt'];
+$content = $_POST['content'];
 $userID = $_SESSION['userID'];
 
-$target_dir = "img/";
 $target_file = $target_dir . basename($_FILES["imgPath"]["name"]);
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file, PATHINFO_EXTENSION);
@@ -29,7 +29,7 @@ $statement = $dbh->prepare("INSERT INTO articles (header, imgPath, imgAlt, conte
 
 //skift nu ? med en af de forige variabler
 $statement->bindParam(1, $header);
-$statement->bindParam(2, $imgPath);
+$statement->bindParam(2, $target_file);
 $statement->bindParam(3, $imgAlt);
 $statement->bindParam(4, $content);
 $statement->bindParam(5, $userID);
