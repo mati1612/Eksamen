@@ -34,17 +34,17 @@ hr {
   padding: 0;
 }
 
-nav li a {
+nav a {
   font-family: 'Oswald', sans-serif;
   color: black;
 }
 
-nav li a:hover {
+nav a:hover {
   color: #333333;
   text-decoration: underline !important;
 }
 
-nav li a:active {
+nav a:active {
   text-decoration: underline !important;
 }
 

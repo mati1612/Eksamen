@@ -4,7 +4,9 @@
     <main class="col-10">
 
         <div>
-        <form action="insert.php" method="post" enctype="multipart/form-data" class="row">
+        <?php 
+            if(isset($_SESSION['username']) && !empty($_SESSION['username'])){  ?>  
+        <form action="insert.php" method="post" enctype="multipart/form-data" class="row" id="writeArticle">
 
             <label for="header">Artiklens overskrift her:</label>
             <input type="text" id="header" name="header" placeholder="Overskrift her..." class="col-12">
@@ -19,7 +21,9 @@
             <input type="text" id="content" name="content" placeholder="Skriv din artikel her..." class="col-12">
 
             <input type="submit" value="Indsæt" content="Indsæt">
-        </form>
+        </form>;
+           <?php }
+        ?>
         </div>
 
         <div class="row" id="opaimg">

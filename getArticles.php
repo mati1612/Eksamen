@@ -2,7 +2,7 @@
 require_once "connect.php";
 
 //trækker info fra tabellen i $dbh og gemmer i statement, derefter kør
-$statement = $dbh->prepare("SELECT * FROM articles ORDER BY articleID DESC");
+$statement = $dbh->prepare("SELECT * FROM articles JOIN users ORDER BY articleID DESC");
 $statement->execute();
 
 //loop der kører indtil alle artikler er kørt
@@ -14,7 +14,7 @@ while ($row = $statement->fetch()){
             <div>
                 <p>
                 <?php echo $row['timestamp']; ?>
-                <?php echo $row['author']; ?>
+                <?php echo $row['username']; ?>
                 </p>
                 <p>
                 <?php echo $row['content']; ?>
